@@ -40,9 +40,10 @@ public class hw1_activity extends AppCompatActivity implements View.OnClickListe
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent intent = new Intent(hw1_activity.this, classwork2Activity.class);
-//                startActivity(intent);
-//                intent.putExtra(classwork2Activity.KEY_TEXT, "Helloooooooooo");
+                Intent intent = new Intent(hw1_activity.this, classwork2Activity.class);
+                intent.putExtra(classwork2Activity.KEY_TEXT, "Helloooooooooo");
+                startActivity(intent);
+
                 String text = (String) text2.getText();
                 text2.setText(text1.getText());
                 text1.setText(text);
