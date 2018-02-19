@@ -1,4 +1,4 @@
-package hw1;
+package com.a081995gmail.ivany4.android.classwork2.hw1;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -9,15 +9,12 @@ import android.widget.TextView;
 
 import com.a081995gmail.ivany4.android.R;
 
-import org.w3c.dom.Text;
-
-import classwork2.classwork2Activity;
+import com.a081995gmail.ivany4.android.classwork2.classwork2Activity;
 
 public class hw1_activity extends AppCompatActivity implements View.OnClickListener {
 
-    Button button;
-    TextView text1;
-    TextView text2;
+    private Button button;
+    private TextView text1, text2;
     private View.OnClickListener listerner = new View.OnClickListener() {
 
         @Override
@@ -40,9 +37,9 @@ public class hw1_activity extends AppCompatActivity implements View.OnClickListe
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(hw1_activity.this, classwork2Activity.class);
-                intent.putExtra(classwork2Activity.KEY_TEXT, "Helloooooooooo");
-                startActivity(intent);
+//                Intent intent = new Intent(hw1_activity.this, classwork2Activity.class);
+//                intent.putExtra(classwork2Activity.KEY_TEXT, "Helloooooooooo");
+//                startActivity(intent);
 
                 String text = (String) text2.getText();
                 text2.setText(text1.getText());

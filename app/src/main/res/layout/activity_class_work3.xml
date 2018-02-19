@@ -1,9 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.a081995gmail.ivany4.android.classwork2.ClassWork3Activity">
 
-</android.support.constraint.ConstraintLayout>
+
+
+    <Button
+        style="@style/ButtonStyle"
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ce5b5b"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:text="@string/button_one" />
+
+    <Button
+        style="@style/ButtonStyleYellow"
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/main_activity_margin"
+        android:text="@string/button_two" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tank"
+        app:srcCompat =  "@drawable/tank"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

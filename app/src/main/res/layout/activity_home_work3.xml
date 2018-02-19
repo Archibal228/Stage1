@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#464545"
+    tools:context="com.a081995gmail.ivany4.android.classwork2.homework3.HomeWork3Activity">
+<EditText
+    android:id="@+id/url_text"
+    android:text="https://ldpr.ru/static/uploads/6dce5a7c9e_IMG_1833.JPG"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:hint="URL"
+    android:paddingStart="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="#dcd9d9"/>
+    <Button
+        android:id="@+id/dwn_btn"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#a984b4"
+        android:layout_marginLeft="10dp"
+        android:text="@string/Download"/>
+
+    <ImageView
+        android:id="@+id/dwn_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_horizontal"/>
+
+<TextView
+    android:id="@+id/name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+</LinearLayout>

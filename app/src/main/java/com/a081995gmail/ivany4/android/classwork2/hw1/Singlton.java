@@ -1,4 +1,4 @@
-package hw1;
+package com.a081995gmail.ivany4.android.classwork2.hw1;
 
 /**
  * Created by Archibal on 09.02.2018.

@@ -1,13 +1,10 @@
-package classwork2;
+package com.a081995gmail.ivany4.android.classwork2;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 
 import com.a081995gmail.ivany4.android.R;
-
-import hw1.Singlton;
 
 /**
  * Created by Archibal on 09.02.2018.

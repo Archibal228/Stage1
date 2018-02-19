@@ -1,9 +1,213 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.a081995gmail.ivany4.android.classwork2.homework2.FlagsActivity">
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Austria" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#f51717" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#fcfbfb" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#f51717" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Poland" />
+
+            <View
+                android:id="@+id/View1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/textView2"
+                android:background="#f2f0f0" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/View1"
+                android:background="#ed0c0c" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Italia" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#4a7c3f" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#f7f5f5" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#c62424" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Colombia"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <View
+                android:id="@+id/Colombia1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#e7c115">
+
+            </View>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="50dp"
+                android:background="#273d9f"></View>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="75dp"
+                android:background="#b7130a"></View>
+        </FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Madagascar"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#eff0f7"></View>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="150dp"
+                android:background="#ba1f1a"></View>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="150dp"
+                android:background="#295b1e"></View>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Thailand"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#bc1414"></View>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#f5f2f2"></View>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#0f1b89"></View>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#f5f2f2"></View>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#bc1414"></View>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Denmark"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#ca3535">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#f9f3f3"
+                android:layout_marginTop="40dp">
+
+            </View>
+            <View
+                android:layout_width="15dp"
+                android:layout_height="100dp"
+                android:background="#f9f3f3"
+                android:layout_marginLeft="100dp">
+
+            </View>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

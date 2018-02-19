@@ -3,4 +3,7 @@
     <string name="textview1">Hello world</string>
     <string name="textview2">Goodbye world</string>
     <string name="button">Change</string>
+    <string name="button_one">Button one</string>
+    <string name="button_two">Button two</string>
+    <string name="Download">Download</string>
 </resources>
