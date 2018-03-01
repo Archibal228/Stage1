@@ -32,6 +32,18 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="Homework4" />
+    <Button
+        android:id="@+id/btn_hw5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Homework5"/>
+    <Button
+        android:id="@+id/btn_hw6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Homework6"/>
 
 
 </LinearLayout>

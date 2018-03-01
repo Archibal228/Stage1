@@ -14,10 +14,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.BitmapTransformation;
 import com.bumptech.glide.module.AppGlideModule;
 import com.bumptech.glide.request.RequestOptions;
-import com.facebook.drawee.backends.pipeline.Fresco;
-import com.facebook.drawee.view.SimpleDraweeView;
 import com.squareup.leakcanary.LeakCanary;
-import com.squareup.picasso.Picasso;
 
 public class HomeWork3Activity extends AppCompatActivity implements View.OnClickListener {
     private Button btndwn;
@@ -30,9 +27,9 @@ public class HomeWork3Activity extends AppCompatActivity implements View.OnClick
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_work3);
-        if (LeakCanary.isInAnalyzerProcess(this)) {
+       /* if (LeakCanary.isInAnalyzerProcess(this)) {
             return;
-        }
+        }*/
         btndwn = findViewById(R.id.dwn_btn);
         url = findViewById(R.id.url_text);
         dwn_pic = findViewById(R.id.dwn_img);

@@ -94,9 +94,9 @@ public class CustomView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         paint.setColor(Color.BLACK);
-        canvas.drawCircle(getWidth() , getHeight() , radius, paint);
-        paint.setColor(Color.BLUE);
-        canvas.drawRect(rect,paint);
+        canvas.drawCircle(getWidth()/2 , getHeight()/2 , radius, paint);
+//       paint.setColor(Color.BLUE);
+//        canvas.drawRect(rect,paint);
 
         //  canvas.drawLine(0, 0, getWidth(), getHeight(), paint);
 //invalidate(); перерисовывать экран
