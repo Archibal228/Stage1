@@ -20,7 +20,7 @@ import android.widget.ImageView;
 import com.a081995gmail.ivany4.android.R;
 
 public class HomeWork5Activity extends AppCompatActivity implements View.OnClickListener {
-    private ImageView wifi_img;
+    private static ImageView wifi_img;
     private Button change_btn;
     private ServiceConnection sConn;
     boolean bound;
@@ -88,13 +88,14 @@ public class HomeWork5Activity extends AppCompatActivity implements View.OnClick
 
     }
 
-    public void changeImage(boolean isConnected){
+    public  static void changeImage(boolean isConnected){
         if (isConnected){
             wifi_img.setImageResource(R.drawable.ic_signal_wifi_4_bar_black_24dp);
         }else{
             wifi_img.setImageResource(R.drawable.ic_signal_wifi_off_black_24dp);
         }
     }
+
 
     @Override
     protected void onDestroy() {
@@ -103,14 +104,14 @@ public class HomeWork5Activity extends AppCompatActivity implements View.OnClick
     }
     @Override
     public void onClick(View v) {
-        WifiManager wifi = (WifiManager)getApplicationContext().getSystemService(WIFI_SERVICE);
-        if(wifi.isWifiEnabled()) {
-            wifi.setWifiEnabled(false);
-            changeImage(false);
-        }else{
-            wifi.setWifiEnabled(true);
-            changeImage(true);
-        }
+//        WifiManager wifi = (WifiManager)getApplicationContext().getSystemService(WIFI_SERVICE);
+//        if(wifi.isWifiEnabled()) {
+//            wifi.setWifiEnabled(false);
+//            changeImage(false);
+//        }else{
+//            wifi.setWifiEnabled(true);
+//            changeImage(true);
+//        }
         mService.Chager();
     }
 }

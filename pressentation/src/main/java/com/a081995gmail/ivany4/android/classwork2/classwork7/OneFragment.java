@@ -17,6 +17,8 @@ import com.a081995gmail.ivany4.android.R;
 
 public class OneFragment extends Fragment {
     final static String Key_Value = "Key_Value";
+ //   private Disposable disposable;
+    //private Observable observable
 
     public static OneFragment getInstance(FragmentManager fragmentManager, int value) {
         TwoFragment fragment = (TwoFragment) fragmentManager.findFragmentByTag(TwoFragment.class.getSimpleName());
@@ -43,9 +45,36 @@ public class OneFragment extends Fragment {
         Bundle bundle = getArguments();
         if (bundle != null) {
             int value = bundle.getInt(Key_Value);
+
             //инициализация UI
         }
+      //  view.setOnClickListener(new View.OnClickListener());
+    }
+//    public  subscribe(){
+//
+//    }
 
+   // @Override
+//    public void onResume() {
+//        super.onResume();
+// disposable =   publishcontract.getpublishSubject()
+//            .subscribe(new Consume<Integer>(){
+    public void accept (Integer integer){
+        //textView.setText(String.valueof(integer));
+    }
+//    }
 
+    @Override
+    public void onPause() {
+        super.onPause();
+//        if(disposable != null){
+//            disposable.dispose();
+        }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+//        publishcontact = null;
     }
 }
+
