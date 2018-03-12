@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="myEntity"
+            type="com.a081995gmail.ivany4.android.classwork2.MyEntity"/>
+    </data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@{myEntity.text}"
+        android:background="#c61212"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="@{myEntity.buttonVisibal ? View.VISIBLE : View.GONE}"
+        android:text="@{myEntity.text}"
+        android:onClick="@{myEntity::buttonClick}"
+        android:background="#abf14a"/>
+
+</LinearLayout>
+</layout>

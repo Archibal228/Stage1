@@ -1,18 +1,44 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    
+
     repositories {
         google()
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0'
-        
+        classpath 'com.android.tools.build:gradle:3.0.1'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
+}
+ext {
+
+
+    compileSdkVersion = 27
+    minSdkVersion = 18
+    targetSdkVersion = 26
+    buildToolsSdkVersion = "27.0.2"
+    androidBindingVersion ='3.0.0'
+    rxjavaVersion = '2.1.10'
+    rxandroidVersion = '2.0.2'
+    gsonVersion = '2.8.1'
+
+    dependencies = [
+
+        supportAppcompat: "com.android.support:appcompat-v7:$buildToolsSdkVersion",
+        supportV4: "com.android.support:support-v4:$buildToolsSdkVersion",
+        supportDesign: "com.android.support:design:$buildToolsSdkVersion",
+
+        androidBindingCompiler: "com.android.databinding:compiler:$androidBindingVersion",
+        rxjava2: "io.reactivex.rxjava2:rxjava:$rxjavaVersion",
+        rxandroid: "io.reactivex.rxjava2:rxandroid:$rxandroidVersion",
+
+        gson: "com.google.code.gson:gson:$gsonVersion"
+    ]
+
+
 }
 
 allprojects {

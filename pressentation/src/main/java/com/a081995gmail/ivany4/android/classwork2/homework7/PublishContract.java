@@ -1,5 +1,4 @@
-package com.a081995gmail.ivany4.android.classwork2;
-
+package com.a081995gmail.ivany4.android.classwork2.homework7;
 
 import io.reactivex.Observable;
 

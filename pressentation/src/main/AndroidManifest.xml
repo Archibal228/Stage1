@@ -62,7 +62,9 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".classwork2.ClassWork8Activity"></activity>
+        <activity android:name=".classwork2.ClassWork8Activity" />
+        <activity android:name=".classwork2.homework7.Homework7Activity" />
+        <activity android:name=".classwork2.ClassWork9Activity"></activity>
     </application>
 
 </manifest>

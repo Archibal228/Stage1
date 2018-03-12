@@ -13,10 +13,11 @@ import com.a081995gmail.ivany4.android.classwork2.homework3.HomeWork3Activity;
 import com.a081995gmail.ivany4.android.classwork2.homework4.HomeWork4Activity;
 import com.a081995gmail.ivany4.android.classwork2.homework5.HomeWork5Activity;
 import com.a081995gmail.ivany4.android.classwork2.homework6.HomeWork6Activity;
+import com.a081995gmail.ivany4.android.classwork2.homework7.Homework7Activity;
 import com.a081995gmail.ivany4.android.classwork2.hw1.hw1_activity;
 
 public class GeneralActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button btn_hw1, btn_hw2, btn_hw3, btn_hw4, btn_hw5, btn_hw6;
+    private Button btn_hw1, btn_hw2, btn_hw3, btn_hw4, btn_hw5, btn_hw6, btn_hw7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,12 +29,14 @@ public class GeneralActivity extends AppCompatActivity implements View.OnClickLi
         btn_hw4 = findViewById(R.id.btn_hw4);
         btn_hw5 =findViewById(R.id.btn_hw5);
         btn_hw6 = findViewById(R.id.btn_hw6);
+        btn_hw7 = findViewById(R.id.btn_hw7);
         btn_hw1.setOnClickListener(this);
         btn_hw2.setOnClickListener(this);
         btn_hw3.setOnClickListener(this);
         btn_hw4.setOnClickListener(this);
         btn_hw5.setOnClickListener(this);
         btn_hw6.setOnClickListener(this);
+        btn_hw7.setOnClickListener(this);
 
         //btn_hw3.setText(BuildConfig.Api_URL);
 
@@ -71,6 +74,10 @@ public class GeneralActivity extends AppCompatActivity implements View.OnClickLi
                 Intent intent6 = new Intent(this, HomeWork6Activity.class);
                 startActivity(intent6);
                 overridePendingTransition(R.anim.right_in, R.anim.left_out);
+                break;
+            case R.id.btn_hw7:
+                Intent intent7 = new Intent(this, Homework7Activity.class);
+                startActivity(intent7);
                 break;
         }
     }
