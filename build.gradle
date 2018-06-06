@@ -18,24 +18,47 @@ ext {
 
     compileSdkVersion = 27
     minSdkVersion = 18
-    targetSdkVersion = 26
+    targetSdkVersion = 27
+
+    archComponents = '1.0.0'
     buildToolsSdkVersion = "27.0.2"
-    androidBindingVersion ='3.0.0'
+    androidBindingCompiler = '1.1.0'
     rxjavaVersion = '2.1.10'
     rxandroidVersion = '2.0.2'
     gsonVersion = '2.8.1'
+    daggerVersion = '2.15'
+    javaInjectVersion = '1'
+    retrofitVersion = '2.4.0'
+    okHttpVersion = '3.10.0'
+    constraiVersion = '1.0.2'
+    rxPermissionVersion = '0.9.5@aar'
+
 
     dependencies = [
 
-        supportAppcompat: "com.android.support:appcompat-v7:$buildToolsSdkVersion",
-        supportV4: "com.android.support:support-v4:$buildToolsSdkVersion",
-        supportDesign: "com.android.support:design:$buildToolsSdkVersion",
+            supportAppcompat        : "com.android.support:appcompat-v7:$buildToolsSdkVersion",
+            supportV4               : "com.android.support:support-v4:$buildToolsSdkVersion",
+            supportDesign           : "com.android.support:design:$buildToolsSdkVersion",
+            constrainLayout         : "com.android.support.constraint:constraint-layout:$constraiVersion",
+            rxPermission            : "com.tbruyelle.rxpermissions2:rxpermissions:$rxPermissionVersion",
+            rxjava2                 : "io.reactivex.rxjava2:rxjava:$rxjavaVersion",
+            rxandroid               : "io.reactivex.rxjava2:rxandroid:$rxandroidVersion",
+            archComponentsExtensions: "android.arch.lifecycle:extensions:$archComponents",
+            archComponentsCompiler  : "android.arch.lifecycle:compiler:$archComponents",
 
-        androidBindingCompiler: "com.android.databinding:compiler:$androidBindingVersion",
-        rxjava2: "io.reactivex.rxjava2:rxjava:$rxjavaVersion",
-        rxandroid: "io.reactivex.rxjava2:rxandroid:$rxandroidVersion",
-
-        gson: "com.google.code.gson:gson:$gsonVersion"
+            //androidBindingCompiler: "com.android.databinding:compiler:$androidBindingCompiler",
+            dagger                  : "com.google.dagger:dagger:$daggerVersion",
+            daggerCompiler          : "com.google.dagger:dagger-compiler:$daggerVersion",
+            retrofit                : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            retrofitConverter       : "com.squareup.retrofit2:converter-gson:$retrofitVersion",
+            retrofitrx              : "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion",
+            okHttp                  : "com.squareup.okhttp3:mockwebserver:$okHttpVersion",
+            okHttpLogging           : "com.squareup.okhttp3:logging-interceptor:$okHttpVersion",
+            room                    : "android.arch.persistence.room:runtime:$archComponents",
+            roomCompiler            : "android.arch.persistence.room:compiler:$archComponents",
+            roomRX                  : "android.arch.persistence.room:rxjava2:$archComponents",
+            javaxInject             : "javax.inject:javax.inject:$javaInjectVersion",
+            gson                    : "com.google.code.gson:gson:$gsonVersion"
     ]
 
 

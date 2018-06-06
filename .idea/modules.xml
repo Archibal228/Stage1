@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Stage1.iml" filepath="$PROJECT_DIR$/Stage1.iml" />
-      <module fileurl="file://C:\Users\Archibal\AndroidStudioProjects\Stage1\pressentation\app.iml" filepath="C:\Users\Archibal\AndroidStudioProjects\Stage1\pressentation\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/data/data.iml" filepath="$PROJECT_DIR$/data/data.iml" />
       <module fileurl="file://$PROJECT_DIR$/domain/domain.iml" filepath="$PROJECT_DIR$/domain/domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/pressentation/pressentation.iml" filepath="$PROJECT_DIR$/pressentation/pressentation.iml" />

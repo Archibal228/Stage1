@@ -6,8 +6,9 @@ package com.a081995gmail.ivany4.android.classwork2;
 
 public class User {
 
-    private String imageUrl;
-    private String name;
+    public String imageUrl;
+    public String name;
+    public int age;
 
     public User(String imageUrl, String name, String suname) {
         this.imageUrl = imageUrl;

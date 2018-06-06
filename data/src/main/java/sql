@@ -1,0 +1,3 @@
+SELECT * FROM user INNER Join country ON User.id_c = country.id совмещает две таблицы в один результат , то что не совмещается будет удалено
+SELECT * FROM user Left Join country ON User.id_c = country.id в две таблицы, то что не совмещается будет добавлены результаты только слева
+SELECT * FROM user Right Join country ON User.id_c = country.id тоже самое только все берем с права,то что не совмещается левую зону заполнит нулями

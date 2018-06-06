@@ -1,7 +1,7 @@
 package com.a081995gmail.ivany4.android.classwork2.homework7;
 
-import io.reactivex.Observable;
+import io.reactivex.subjects.PublishSubject;
 
 public interface PublishContract {
-    Observable<Integer> getObservable();
+    PublishSubject<Integer> getObservable();
 }

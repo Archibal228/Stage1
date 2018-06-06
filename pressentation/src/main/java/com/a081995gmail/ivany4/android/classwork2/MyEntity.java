@@ -11,16 +11,16 @@ import android.view.View;
  */
 
 public class MyEntity {
-    public ObservableField<String> text = new ObservableField<String>("");
-    public ObservableField<String> buttontext = new ObservableField<String>("");
-    public ObservableBoolean buttonVisibal = new ObservableBoolean(true);
+    public String text;
+    public String buttontext;
+    public boolean buttonVisibal =true;
 
     public MyEntity(String text, String buttontext) {
-        this.text.set(text);
-        this.buttontext.set(buttontext);
+        this.text=text;
+        this.buttontext = buttontext;
     }
     public void buttonClick(View view){
         Log.e("adadas","fsfdsf");
-        buttonVisibal.set(false);
+
     }
 }

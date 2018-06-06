@@ -26,6 +26,18 @@ dependencies {
 
     implementation dependency.gson
     api project(path: ':domain')
+    implementation dependency.javaxInject
+    api dependency.retrofit
+    api dependency.retrofit
+    api dependency.retrofitConverter
+    api dependency.retrofitrx
+    api dependency.okHttp
+    api dependency.okHttpLogging
+    api dependency.room
+    annotationProcessor dependency.roomCompiler
+    api dependency.roomRX
+
+
 
 
 

@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 
+
 android {
     compileSdkVersion rootProject.compileSdkVersion
     buildToolsVersion rootProject.buildToolsSdkVersion
@@ -14,6 +15,8 @@ android {
         buildConfigField "String", "API_ENDPOINT ", "\"Hello\""
 
     }
+
+
 
     buildTypes {
         release {
@@ -35,8 +38,8 @@ android {
 
     }
     compileOptions {
-        targetCompatibility JavaVersion.VERSION_1_8
         sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
     dataBinding {
         enabled = true
@@ -44,7 +47,7 @@ android {
 }
 
 repositories {
-    mavenCentral()
+    jcenter()
     google()
 }
 
@@ -59,10 +62,21 @@ dependencies {
     implementation dependency.supportAppcompat
     implementation dependency.supportV4
     implementation dependency.supportDesign
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation dependency.constrainLayout
     implementation 'com.android.support:support-v4:27.0.2'
-    annotationProcessor dependency.androidBindingCompiler
+    //annotationProcessor dependency.androidBindingCompiler
     implementation dependency.rxandroid
+    implementation dependency.archComponentsExtensions
+    implementation 'com.google.android.gms:play-services-maps:11.0.4'
+    implementation 'com.android.support:appcompat-v7:27.+'
+    annotationProcessor dependency.archComponentsCompiler
+    implementation dependency.dagger
+    annotationProcessor dependency.daggerCompiler
+    implementation dependency.rxPermission
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
 
     implementation 'com.github.bumptech.glide:glide:4.6.1'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'

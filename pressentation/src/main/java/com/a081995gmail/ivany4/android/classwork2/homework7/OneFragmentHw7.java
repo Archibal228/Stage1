@@ -18,12 +18,13 @@ import io.reactivex.Observable;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
+import io.reactivex.subjects.PublishSubject;
 
 
 public class OneFragmentHw7 extends Fragment {
 
     public TextView textView;
-    public Observable observable;
+   // public Observable observable;
     private Disposable disposable;
     private PublishContract publishContract;
 
@@ -118,7 +119,7 @@ public class OneFragmentHw7 extends Fragment {
         super.onAttach(context);
         Activity activity = getActivity();
         if (activity!=null){
-            publishContract = (PublishContract) activity;
+            publishContract =  (PublishContract)activity;
         }
     }
 
